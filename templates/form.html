@@ -1,36 +1,27 @@
+{% load static %}
+
 <html>
 <head>
-    <title>Test Form</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body>
 
-<h1>Test</h1>
+<h1>Login Form</h1>
 
-<form method="POST">
+<form method="POST" class="center colorBox">
     <div class="input">
-        <label style="min-width: 300px" for="username">First Name</label>
+        <label for="username">User Name</label>
         <input id="username" type="text"><br>
     </div>
 
     <div class="input">
-        <label for="username">Second </label>
+        <label for="username">Password </label>
         <input id="password" type="password"><br>
     </div>
 
-    <h1>Select please</h1>
-    <label for="size">Select size</label>
-    <select id="size">
-        <option value="volvo">large</option>
-        <option value="saab">small</option>
-        <option value="mercedes">medium</option>
-    </select>
-    <br>
-    <textarea rows="5">Text area</textarea>
-
-    <br>
-    <br>
-    <input type="submit" value="Buy">
+    <input type="submit" value="Login">
 </form>
 </body>
 </html>

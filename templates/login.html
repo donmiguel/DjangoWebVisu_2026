@@ -1,0 +1,31 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+<div class="center colorBox">
+
+    <h1>Login Form</h1>
+
+    <form method="POST">
+
+        <div class="input">
+            <label for="username">User Name</label>
+            <input id="username" type="text"><br>
+        </div>
+
+        <div class="input">
+            <label for="username">Password </label>
+            <input id="password" type="password"><br>
+        </div>
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+</body>
+</html>
