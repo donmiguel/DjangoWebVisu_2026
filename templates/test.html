@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Titel</title>
+</head>
+<body>
+    <p>Bitte die Juli Temperatur eingeben</p>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="temp" placeholder="Temperatur"/>
+        <input type="submit" name="Submit">
+    </form>
+    
+    <p style="font-size: 40px">Generated Chart:</p>
+    <img src="{% static 'monate.png' %}">
+</body>
+</html>
